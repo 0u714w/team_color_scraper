@@ -4,9 +4,24 @@ import requests
 import re
 
 
-link = 'https://teamcolorcodes.com/{}' + '-color-codes/'
+link = 'https://teamcolorcodes.com/{}' + '-color-codes/' or '-colors/'
 
-colleges = ['ball-state-cardinals', 'duke-blue-devils']
+colleges = ['duke-blue-devils', 'kentucky-wildcats',
+            'virginia-cavaliers', 'st-johns-red-storm', 'ole-miss-rebels', 
+            'nc-state-wolfpack', 'oklahoma-sooners', 
+            'virginia-commonwealth-rams', 'temple-owls', 
+            'florida-state-seminoles', 'kansas-state-wildcats',
+            'iowa-state-cyclones', 'auburn-tigers', 'alabama-crimson-tide',
+            'ohio-state-buckeyes', 'maryland-terrapins', 'nevada-wolfpack',
+            'texas-tech-red-raiders', 'lipscomb-university-bisons', 
+            'yale-bulldogs', 'old-dominion-monarchs', 'buffalo-bulls', 
+            'iowa-hawkeyes', 'virginia-tech-hokies', 'cincinnati-bearcats',
+            'florida-gators', 'arizona-state', 'kansas-jayhawks', 
+            'houston-cougars', 'montana-grizzlies', 'uc-irvine-anteaters',
+            'washington-huskies', 'baylor-bears', 'syracuse-orange',
+            'texas-christian-horned-frogs', 'texas-longhorns', 
+            'michigan-wolverines', 'texas-state-bobcats', 
+            'wright-state-raiders']
 
 
 def get_item(url):
