@@ -1,0 +1,14 @@
+sam houston st #D88438, #FFFFFF, #001DF5
+prairie view #2D0962, #F8CD46
+norfolk st #347856, #EED05B, #55585A
+bucknell #123862, #DF642C
+st. francis #001DF5, #EB3323
+iona #851929, #F4BB44
+louisville #9F1F14, #000000
+nc state #BC261A, #FFFFFF
+lipscomb #2F2051, #EAAC3C
+hofstra #0D368C, #FFFFFF, #F6C952
+vermont #2F6F57, #F9D44C
+wofford #846F51, #000000
+ucf #000000, #B4A371
+radford #B22426, #FFFFFF, #808285

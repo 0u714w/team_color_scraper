@@ -8,7 +8,6 @@ link = 'https://teamcolorcodes.com/{}' + '-color-codes/'
 
 link2 = 'https://teamcolorcodes.com/{}' + '-colors/'
 
-
 colleges1 = ['duke-blue-devils', 'kentucky-wildcats',
             'virginia-cavaliers', 'st-johns-red-storm', 'ole-miss-rebels', 
             'nc-state-wolfpack', 'oklahoma-sooners', 
@@ -51,3 +50,7 @@ if __name__ == '__main__':
         print(color_codes(link))
     for college in colleges2:
         print(color_codes(link2))
+    more_colors = open("team_colors.txt", 'r').readlines()
+    for line in more_colors:
+        print(line)
+    
