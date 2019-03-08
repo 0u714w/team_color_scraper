@@ -4,9 +4,12 @@ import requests
 import re
 
 
-link = 'https://teamcolorcodes.com/{}' + '-color-codes/' or '-colors/'
+link = 'https://teamcolorcodes.com/{}' + '-color-codes/'
 
-colleges = ['duke-blue-devils', 'kentucky-wildcats',
+link2 = 'https://teamcolorcodes.com/{}' + '-colors/'
+
+
+colleges1 = ['duke-blue-devils', 'kentucky-wildcats',
             'virginia-cavaliers', 'st-johns-red-storm', 'ole-miss-rebels', 
             'nc-state-wolfpack', 'oklahoma-sooners', 
             'virginia-commonwealth-rams', 'temple-owls', 
@@ -23,8 +26,15 @@ colleges = ['duke-blue-devils', 'kentucky-wildcats',
             'michigan-wolverines', 'texas-state-bobcats', 
             'wright-state-raiders']
 
+colleges2 = ['michigan-state-spartans', 'gonzaga', 
+            'mississippi-state-university-bulldogs', 'wisconsin-badgers',
+            'new-mexico-state-aggies', 'louisiana-state-lsu-tigers', 'minnesota-golden-gophers',
+            'seton-hall-pirates', 'marquette', 'purdue-boilermakers', 
+            'south-dakota-state-jackrabbits', 'villanova-wildcats',
+            'north-carolina-tar-heels', 'loyola-marymount-lions']
 
-def get_item(url):
+
+def color_codes(url):
 
     team_colors = [college]
     page = requests.get(url.format(college))
@@ -34,8 +44,10 @@ def get_item(url):
     set_hex = set(hex)
     team_colors.append(set_hex)
     return team_colors
-            
+     
 
 if __name__ == '__main__':
-    for college in colleges:
-        print get_item(link)
+    for college in colleges1:
+        print(color_codes(link))
+    for college in colleges2:
+        print(color_codes(link2))
